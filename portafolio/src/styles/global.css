@@ -1,0 +1,87 @@
+/* ============================================================
+   global.css — Variables de diseño, reset y tipografía Agrandir
+   ============================================================ */
+
+:root {
+  /* Paleta Azul Marino (Software y Habilidades) */
+  --bg-deep-navy: #08162b;
+  --bg-main-navy: #0c2340;
+  --bg-sidebar-navy: #15325b;
+  --bg-card-navy: #183c6c;
+  --border-card-navy: #224c84;
+  --pill-bg-navy: #133663;
+  --pill-border-cyan: #0099e6;
+
+  /* Paleta Violeta (J.Nara / Videojuegos) */
+  --bg-jnara-purple: #1c0c38;
+  /* Color exacto que coincide 100% con el marco de DodgeBox.png */
+  --bg-jnara-card: #b19cc8;
+  --text-jnara-dark: #1b0e35;
+  --jnara-purple-accent: #b49fd4;
+  --jnara-pill-border: #351a5c;
+
+  /* Colores de texto y acento */
+  --cyan-bright: #38bdf8;
+  --cyan-accent: #00a8e8;
+  --text-white: #ffffff;
+  --text-light-blue: #c2d7f2;
+  --text-muted-blue: #8ea9cb;
+  --nav-bar-black: #060911;
+
+  /* Tipografía: Agrandir con fallback a Syne / Space Grotesk */
+  --font-main: 'Agrandir', 'Syne', 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-deep-navy);
+  color: var(--text-white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Animación global de entrada suave */
+@keyframes fadeInUpSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-section {
+  animation: fadeInUpSmooth 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

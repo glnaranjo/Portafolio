@@ -1,0 +1,45 @@
+/* ============================================================
+   nav.css — Barra de navegación superior sobria y elegante
+   ============================================================ */
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--nav-bar-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.75rem;
+  padding: 1.15rem 1rem;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-btn {
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: #c7d2e0;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-btn:hover {
+  color: var(--text-white);
+}
+
+.nav-btn--active {
+  color: var(--cyan-bright);
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    gap: 1.5rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .nav-btn {
+    font-size: 1.2rem;
+  }
+}
