@@ -1,6 +1,6 @@
 /* ============================================================
    skills.css — Pantalla de Habilidades sobria y limpia
-   Sin efectos de resplandor neón ni sombras fluorescentes
+   Tipografía más amplia y espaciada para PC
    ============================================================ */
 
 .skills-screen {
@@ -9,15 +9,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 3rem;
+  padding: 4.5rem 3.5rem;
   animation: fadeInUpSmooth 0.35s ease forwards;
 }
 
 .skills-container {
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
-  gap: 3.5rem;
-  max-width: 1200px;
+  gap: 4.5rem;
+  max-width: 1350px;
   width: 100%;
   align-items: flex-start;
 }
@@ -26,13 +26,13 @@
 .skills-column {
   display: flex;
   flex-direction: column;
-  gap: 2.25rem;
+  gap: 2.75rem;
 }
 
 /* Título de la columna: Tecnicas / Personales */
 .skills-col-title {
   color: var(--cyan-bright);
-  font-size: 1.85rem;
+  font-size: 2.15rem;
   font-weight: 500;
   text-align: center;
   margin-bottom: 0.5rem;
@@ -43,16 +43,16 @@
 .skills-list-group {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  font-size: 1.15rem;
-  line-height: 1.6;
+  gap: 1.85rem;
+  font-size: 1.25rem;
+  line-height: 1.7;
   text-align: center;
 }
 
 .skills-line {
   color: #e2edff;
   font-weight: 300;
-  padding: 0.4rem 0.8rem;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   transition: background-color 0.2s ease, transform 0.2s ease;
   cursor: default;
@@ -76,13 +76,13 @@
 .skills-vertical-divider {
   width: 1px;
   height: 100%;
-  min-height: 480px;
+  min-height: 520px;
   background-color: rgba(255, 255, 255, 0.2);
   align-self: stretch;
 }
 
 /* ── Responsive en tablets y móviles ── */
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .skills-screen {
     padding: 3rem 1.5rem;
   }
@@ -96,8 +96,12 @@
     display: none;
   }
 
+  .skills-col-title {
+    font-size: 1.85rem;
+  }
+
   .skills-list-group {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     gap: 1.4rem;
   }
 }

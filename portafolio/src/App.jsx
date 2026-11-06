@@ -4,6 +4,7 @@ import Header   from './components/Header.jsx'
 import Nav      from './components/Nav.jsx'
 import Projects from './components/Projects.jsx'
 import Skills   from './components/Skills.jsx'
+import Footer   from './components/Footer.jsx'
 
 export default function App() {
   // 'projects' | 'skills'
@@ -23,6 +24,7 @@ export default function App() {
         {activeSection === 'projects' && <Projects lang={lang} />}
         {activeSection === 'skills'   && <Skills   lang={lang} />}
       </main>
+      <Footer lang={lang} />
     </>
   )
 }

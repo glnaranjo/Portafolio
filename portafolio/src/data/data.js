@@ -32,6 +32,11 @@ export const translations = {
       traits: "Rasgos",
       spoken: "Idiomas",
     },
+    footer: {
+      rights: "Todos los derechos reservados.",
+      backToTop: "Volver arriba ↑",
+      location: "Argentina",
+    },
   },
   eng: {
     profession: "Software Developer",
@@ -57,6 +62,11 @@ export const translations = {
       traits: "Traits",
       spoken: "Languages",
     },
+    footer: {
+      rights: "All rights reserved.",
+      backToTop: "Back to top ↑",
+      location: "Argentina",
+    },
   },
 };
 
@@ -68,9 +78,9 @@ export const personalInfo = {
 
 /** Redes sociales — dejar url vacía para mostrar el ícono sin enlace */
 export const socialLinks = [
-  { platform: "Instagram", url: "", icon: "instagram" },
-  { platform: "GitHub",    url: "", icon: "github"    },
-  { platform: "LinkedIn",  url: "", icon: "linkedin"  },
+  { platform: "Instagram", url: "https://www.instagram.com/gal.nj_", icon: "instagram" },
+  { platform: "GitHub",    url: "https://github.com/glnaranjo", icon: "github"    },
+  { platform: "LinkedIn",  url: "https://www.linkedin.com/in/galo-naranjo-323596403/", icon: "linkedin"  },
 ];
 
 // ── Proyectos de software ────────────────────────────────────
@@ -78,16 +88,35 @@ export const socialLinks = [
 export const projects = [
   {
     id: 1,
+    name: "ZinclasPrisma",
+    category: "software",
+    date:    "Abril 2026 - Octubre 2026",
+    dateEng: "April 2026 - October 2026",
+    role:    "Frontend",
+    roleEng: "Frontend Developer",
+    description:
+      "Participación en el desarrollo frontend de “Zinclas”, trabajando inicialmente en la versión escolar del proyecto y actualmente colaborando en una adaptación orientada a la empresa RotarSA. Desarrollo de interfaces y componentes reutilizables utilizando .NET MAUI Blazor.",
+    descriptionEng:
+      "Involved in the frontend development of “Zinclas”, initially contributing to the educational version of the project and currently collaborating on an enterprise-tailored adaptation for RotarSA. Built interactive interfaces and reusable UI components using .NET MAUI Blazor.",
+    technologies: [".NET", "Blazor Hybrid", "Razor", "HTML", "CSS"],
+    image: null,           // Reemplazar con ruta: "/assets/images/zinclas.png"
+    links: {
+      github: "",
+      demo: "",
+    },
+  },
+  {
+    id: 2,
     name: "Pick-Up Chacabuco",
     category: "software",
     date:    "Mayo 2026 - Noviembre 2026",
     dateEng: "May 2026 - November 2026",
-    role:    "Jefe de Frontend",
-    roleEng: "Frontend Lead",
+    role:    "Frontend",
+    roleEng: "Frontend",
     description:
       "Pick Up Chacabuco es una aplicacion web diseñada para digitalizar, optimizar y agilizar el funcionamiento del buffet y comedor institucional de la institucion secundaria E.E.S.T N°6 Chacabuco - Moron",
     descriptionEng:
-      "Pick Up Chacabuco is a web app designed to digitalize and optimize the institutional buffet and canteen of secondary school E.E.S.T N°6 Chacabuco - Morón.",
+      "Pick Up Chacabuco is a web application designed to digitalize, streamline, and optimize the operations of the institutional buffet and dining hall at technical high school E.E.S.T N°6 Chacabuco - Morón.",
     technologies: ["React", "TypeScript", "Tailwind CSS", "ASP.NET"],
     image: null,           // Reemplazar con ruta: "/assets/images/pickup-chacabuco.png"
     links: {
@@ -96,7 +125,7 @@ export const projects = [
     },
   },
   {
-    id: 2,
+    id: 3,
     name: "MNTS Control de Gastos",
     category: "software",
     date:    "Diciembre 2025 - Noviembre 2026",
@@ -106,9 +135,28 @@ export const projects = [
     description:
       "MNTS es una app mobile diseñada para el control de gastos e ingresos personales. Permitiendo el acceso a Categorías personalizables, resúmenes mensuales con gráficos y exportación a Excel.",
     descriptionEng:
-      "MNTS is a mobile app for personal expense and income tracking. Features customizable categories, monthly summaries with charts, and Excel export.",
+      "MNTS is a mobile application engineered for personal expense and income management. Features customizable spending categories, interactive monthly graphic summaries, and Excel report export.",
     technologies: [".NET", "Blazor Hybrid", "Razor", "SQLite", "ApexCharts"],
     image: null,           // Reemplazar con ruta: "/assets/images/mnts.png"
+    links: {
+      github: "",
+      demo: "",
+    },
+  },
+  {
+    id: 4,
+    name: "G-NAND-Monitoring",
+    category: "software",
+    date:    "Agosto 2026",
+    dateEng: "August 2026",
+    role:    "Desarrollo independiente (UX/UI + Frontend + Backend)",
+    roleEng: "Independent development (UX/UI + Frontend + Backend)",
+    description:
+      "Herramienta de seguridad para Windows que intercepta comandos de consola antes de que se ejecuten. Los pausa, analiza su nivel de riesgo y permite que el usuario decida si desea autorizarlos, agregarlos a una lista blanca o bloquearlos.",
+    descriptionEng:
+      "Windows security utility that intercepts console commands prior to execution. It pauses commands, evaluates their potential threat level, and empowers the user to authorize, whitelist, or block them.",
+    technologies: [".NET", "C#"],
+    image: null,           // Reemplazar con ruta: "/assets/images/gnand.png"
     links: {
       github: "",
       demo: "",
@@ -123,18 +171,18 @@ export const videogames = [
     id: 1,
     name: "Dodge Box",
     category: "videogame",
-    date:    "Diciembre 2025 - Noviembre 2026",
-    dateEng: "December 2025 - November 2026",
+    date:    "Julio 2026",
+    dateEng: "July 2026",
     role:    "Desarrollo independiente e individual",
-    roleEng: "Independent individual development",
+    roleEng: "Independent solo development",
     description:
       "Dodge Box es un juego de arena minimalista y de ritmo rápido en el que el jugador debe esquivar proyectiles y sobrevivir dentro de un único cuadrado mientras las balas se acercan desde todas las direcciones",
     descriptionEng:
       "Dodge Box is a minimalist, fast-paced arena game where the player must dodge projectiles and survive inside a single square as bullets close in from all directions.",
-    technologies: ["GDScript", "Godot"],
+    technologies: ["GDScript", "Godot", "Piskel"],
     image: "/DodgeBox.png", // Imagen real añadida por el usuario
     links: {
-      itch: "",             // URL de itch.io cuando esté disponible
+      itch: "https://jota-naranjo.itch.io/dodge-box",
     },
   },
 ];
@@ -155,7 +203,7 @@ export const skills = {
   technical: {
     languages:  ["C#", "Python", "PHP", "HTML", "CSS", "JavaScript", "TypeScript", "GDScript", "SQL"],
     frameworks: ["React", ".NET", "MAUI Blazor"],
-    design:     ["Figma", "Canva"],
+    design:     ["Figma", "Canva", "Piskel", "Krita"],
     tools:      ["GitHub", "Git", "Manejo de IAs"],
     platforms:  ["VSCode", "VisualStudio", "Godot"],
   },
